@@ -83,11 +83,17 @@ Five different types of contract can exist in this application. Their main respo
 
 ### 3.1. The Regulator
 . Deploys and controls Operators' contracts.
+
 . Receives funds paid as fees from Operators.
+
 . Transfers Operator's contracts ownership.
+
 . Defines the pricing criteria: price per wheel, markup and annual increase.
+
 . Provides an off-chain registration for Drivers and Vehicles that are going to use the Blockchain solution. It is necessary to keep track of and hold them accountable (e.g. toll evading or payment transaction not mined for any reason).
+
 . Because the Regulator keeps track of the system users, it can be notified in case a payment was not processed, and further notify the payer. Also, if the Regulator belongs to the public sector, it can further enforce the payment by other means. 
+
 . When the debt originated from a failed payment is finally quit, the Regulator notifies the proper Operator about it and grants credits accordingly (i.e. instead of receiving funds, the Operator can deduct the credits from the amount owed to the Regulator).
 
 ### 3.2. The Road Operator
