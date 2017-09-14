@@ -50,9 +50,9 @@ For the sake of the example, let's assume:
 
 *USD/ETH* = $300,00 (**from Oracle**)
 
-*Initial investment* = $1 billion
+*Initial investment* = $250 million
 
-*ROI horizon* = 5 years
+*ROI horizon (ROIH)* = 5 years
 
 *Markup* = 25%
 
@@ -60,15 +60,15 @@ For the sake of the example, let's assume:
 
 *Average number of regular 4-wheel vehicles per toll station* = 1 million
 
-Annualized estimated price in USD = ((Initial Investment / ROI) + monthly costs x 12) / (Average number of vehicles x 12) x Markup
+Annualized estimated price in USD = ((Initial Investment / ROIH) + monthly costs x 12) / (Average number of vehicles x 12) x Markup
 
-Annualized estimated price in USD = (($1 billion / 5) + $1 million) / (1 million x 4) * 1.25
+Annualized estimated price in USD = (($250 million / 5) + $1 million x 12) / (1 million x 12) * 1.25
 
-*Annualized estimated price in USD* = **$22,0**
+*Annualized estimated price per regular vehicle in USD* = **$6.46**
 
-*Annualized price **per wheel** in USD* = $22,0 / 4 = **$5.5**
+*Annualized price **per wheel** in USD* = $6.46 / 4 = **$1.615**
 
-*Annualized estimated price per wheel in ETH* = $5.5/$300 = **183 finney + gas**
+*Annualized estimated price per wheel in ETH* = $1.615/$300 = **5383 szabo + gas**
 
 
 ### 2.3. Annual Increase
