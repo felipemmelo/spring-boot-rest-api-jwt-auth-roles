@@ -92,19 +92,27 @@ Five different types of contract can exist in this application. Their main respo
 
 ### 3.2. The Road Operator
 . Deploys and controls Toll Booths contracts.
+
 . Receives funds from Toll Booths.
+
 . Transfers funds to Regulators according to the specified fee.
+
 . Is notified about payments that were not processed, and notifies the Regulator which will notify the payer.
+
 . Receives credits from Regulators when failed payments are quit.
 
 ### 3.3. The Toll Booth
 . Receives fees from Drivers and Vehicles and forwards them to the Operator.
+
 . Has a refund function for the narrow case where the Driver has issued a transaction but the network went down, and the Driver has paid with money.
+
 . In case the transaction, for any reason, has failed, the debt is notified to the Operator which can notify the payer.
+
 . There are several ways to perform the payment such as: 1) Bluetooth connection between the payer phone the the booth computer, 2) previous payment done by the payer and only confirmed by the booth, 3) list of payers registered with the Regulator and shown in the booth computer, which can generate a request on the payer's wallet. 
 
 ### 3.4. The Driver
 . The Driver is not a contract but a regular Blockchain account.
+
 . The Driver pays to the Toll Both based on the number of wheels of the car he is driving when going through the road.
 
 ### 3.5. The Vehicle 
@@ -115,6 +123,9 @@ Five different types of contract can exist in this application. Their main respo
 Regarding the interactions of the contracts:
 
 . The Regulator and its Operators are implemented according to the Hub/Spokes pattern, as well as the Operator and its Toll Booths and also the Regulators themselves, which are created by a Hub, since we can have Regulators in different jurisdictions.
+
 . The toll paid by Drivers and Vehicles are immediately transferred to the Operator and Regulator accounts.
+
 . Operators can kill Toll Booths as well as Regulators can kill Operators.
+
 . Booths may work as Oracles, allowing users to know in advance how much is due at that booth.
