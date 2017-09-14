@@ -71,7 +71,7 @@ Annualized estimated price in USD = (($1 billion / 5) + $1 million) / (1 million
 *Annualized estimated price per wheel in ETH* = $5.5/$300 = **183 finney + gas**
 
 
-###2.3. Annual Increase
+### 2.3. Annual Increase
 If the markup is good enough, the only price increase acceptable is the *inflation rate*. In this scenario, keeping the markup constant would encourage Operators to improve their processes in order to improve efficiency (possibly good to customers), thus, decreasing costs, thus, increasing their margins.
 
 
