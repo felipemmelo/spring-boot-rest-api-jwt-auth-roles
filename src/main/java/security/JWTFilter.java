@@ -53,7 +53,7 @@ public class JWTFilter extends AbstractAuthenticationProcessingFilter {
  
         try {
             Authentication authentication = jwtTokenService.getAuthorization(authHeaderVal);
-            SecurityContextHolder.getContext().setAuthentication(authentication);
+            SecurityContextHolder.getContext().setAuthentication(authentication);            
         }
         catch(JwtException e) {
             httpResponse.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
