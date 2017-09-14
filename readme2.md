@@ -46,16 +46,24 @@ To calculate an acceptable price, the Regulator must take into account: *the ini
 
 For the sake of the example, let's assume:
 
-i. *Local currency* = USD
-ii. *USD/ETH* = $300,00 (**from Oracle**)
-iii. *Initial investment* = $1 billion
-iiii. *ROI horizon* = 5 years
-iiiii. *Markup* = 25%
+*Local currency* = USD
+
+*USD/ETH* = $300,00 (**from Oracle**)
+
+*Initial investment* = $1 billion
+
+*ROI horizon* = 5 years
+
+*Markup* = 25%
+
 *Monthly operational costs per toll station* = $1 million
+
 *Average number of regular 4-wheel vehicles per toll station* = 1 million
 
 Annualized estimated price in USD = ((Initial Investment / ROI) + monthly costs x 12) / (Average number of vehicles x 12) x Markup
+
 Annualized estimated price in USD = (($1 billion / 5) + $1 million) / (1 million x 4) * 1.25
+
 *Annualized estimated price in USD* = **$22,0**
 
 *Annualized price **per wheel** in USD* = $22,0 / 4 = **$5.5**
